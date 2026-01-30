@@ -1,20 +1,25 @@
-Markdown
-# Digital Physics Lab: Sine Wave Projection
+# Digital Physics Lab: Manim Visualizations 🧪
 
-This repository contains the **Manim** source code for visualizing the relationship between circular motion and sine wave displacement. 
+A collection of mathematical experiments exploring the intersection of geometry and motion. This repository serves as the source code for the "Digital Lab" blog series.
 
-## Visualization
-- **Topic:** Trigonometric Projections
-- **Language:** Python
-- **Library:** Manim (Mathematical Animation Engine)
+## 🔬 Lab Experiments
+
+### 01. The Pulse of a Circle
+An introductory look at the vertical displacement of a rotating vector.
+- **Concept:** $y = \sin(\theta)$
+- **Key Visual:** Projection of circular motion.
+
+### 02. Sine Amplitude Projection
+Demonstrating how the Circle's Radius acts as the "DNA" for Wave Amplitude.
+- **Concept:** $y = A \sin(\theta)$
+- **Key Visual:** Scaled radius ($R=1.8$) projection.
+- **File:** `sine_amplitude_projection.py`
 
 ---
 
-### 🔬 Experiment Overview
-In this lab, we map the vertical displacement \( y \) of a rotating vector against the angle \( \theta \) to demonstrate the generation of a sine wave. 
+## 🛠️ How to Run
+To render these animations locally, ensure you have the [Manim Library](https://docs.manim.community/en/stable/installation.html) installed.
 
-> **Project Status:** This visualization is part of a larger series on digital physics. The full explanation and interactive breakdown will be available in future
-
-## How to Run
-To render this animation yourself, you will need the Manim library installed:
-`manim -pql your_filename.py SineWaveScene`
+Use the following command in your terminal:
+```bash
+manim -pql [filename].py [ClassName]
