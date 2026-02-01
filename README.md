@@ -22,6 +22,12 @@ Exploring rotational velocity and the transformation of a "swing" into a "vibrat
 - **Key Visual:** Side-by-side comparison of base speed ($B=1$) vs. high frequency ($B=5$).
 - **File:** `high-frequency-sine-waves.py`
 
+### 04. Beyond the Numbers: The Fibonacci Connection
+Exploring how simple addition transforms into the universe’s favorite design blueprint.
+- **Concept:** Recursive Growth vs. Binet's Formula.
+- **Key Visual:** The "Growth Spiral" accelerating from arithmetic sums into organic architecture.
+- **File:**  the-geometry-of-growth-the-fibonacci-connection.py
+
 ---
 
 ## 🛠️ How to Run
