@@ -1,56 +1,50 @@
 from manim import *
-import numpy as np
 
-class FibonacciGrowth(Scene):
+class FibonacciSpiralFixed(Scene):
     def construct(self):
-        # 1. Sequence and directions
         fibs = [1, 1, 2, 3, 5, 8, 13]
         squares = VGroup()
-        labels = VGroup()
+        arcs = VGroup()
+        
+        # Placement: we move around the previous blocks clockwise
         directions = [RIGHT, UP, LEFT, DOWN]
         
-        # 2. Build Squares and Scaled Labels
+        # CORNER LOGIC:
+        # To mirror the spiral correctly, we map which corners the arc connects.
+        # These are carefully chosen to ensure the end of one matches the start of the next.
+        start_corners = [UL, DL, DR, UR]
+        end_corners = [DR, UR, UL, DL]
+
         for i, side in enumerate(fibs):
             sq = Square(side_length=side)
-            if i > 0:
-                sq.next_to(squares, directions[i % 4], buff=0)
             
-            # Label with dynamic scaling based on the square size
-            num = Text(str(side), font_size=36) # Increased base size
-            num.scale(side * 0.5 if side < 3 else side * 0.2) # Dynamic scaling
-            num.move_to(sq.get_center())
-            
-            squares.add(sq)
-            labels.add(num)
-        
-        # Center and zoom out slightly so the 13x13 square fits
-        all_elements = VGroup(squares, labels).center().scale(0.35)
-        
-        # 3. The Arcs (The "Path of Growth")
-        arcs = VGroup()
-        for i, sq in enumerate(squares):
+            if i == 0:
+                squares.add(sq)
+            else:
+                # Place next square relative to the bounding box of all previous squares
+                sq.next_to(squares, directions[(i-1) % 4], buff=0)
+                squares.add(sq)
+
+            # Creating the arc
+            # Angle PI/2 (positive) vs -PI/2 (negative) controls the "mirror" flip
             arc = ArcBetweenPoints(
-                sq.get_corner(self.get_start_corner(i)),
-                sq.get_corner(self.get_end_corner(i)),
-                angle=-PI/2,
+                sq.get_corner(start_corners[i % 4]),
+                sq.get_corner(end_corners[i % 4]),
+                angle=TAU/4, # TAU/4 is 90 degrees; use -TAU/4 if it still looks inverted on your setup
                 color=GOLD,
-                stroke_width=6 # Made the arc thicker
+                stroke_width=6
             )
             arcs.add(arc)
 
-        # 4. Animation
+        # Center and scale to fit the 13-unit square
+        spiral_group = VGroup(squares, arcs).center().scale(0.3)
+        
+        # Clean sequential animation
         for i in range(len(squares)):
             self.play(
                 Create(squares[i]),
-                Write(labels[i]),
-                run_time=0.4
+                Create(arcs[i]),
+                run_time=0.6
             )
         
-        self.play(Create(arcs), run_time=3)
         self.wait(2)
-
-    def get_start_corner(self, i):
-        return [DL, DR, UR, UL][i % 4]
-
-    def get_end_corner(self, i):
-        return [DR, UR, UL, DL][i % 4]
