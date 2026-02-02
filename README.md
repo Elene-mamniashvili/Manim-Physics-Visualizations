@@ -28,11 +28,11 @@ Exploring how simple addition transforms into the universe’s favorite design b
 - **Key Visual:** The "Growth Spiral" accelerating from arithmetic sums into organic architecture.
 - **File:**  the-geometry-of-growth-the-fibonacci-connection.py
 
-### 04. The Geometry of the Sine Wave: Phase Shifts and Timing
-Exploring how temporal offsets transform into spatial displacement.
-- **Concept:** Horizontal Translation and Angular Offset.
-- **Key Visual:** The "Temporal Gap" between two identical frequencies, visualizing lead and lag states.
-- **File:**  the-geometry-of-the-sine-wave-phase-shifts-and-timing.py
+### 05. The Geometry of the Sine Wave: Interference and Superposition
+Exploring how independent vibrations merge into complex harmonic systems.
+- **Concept:** Horizontal Translation and Angular Offset.Linear Summation and Wave Interference.
+- **Key Visual:** The "Composite Wave" formed by merging a fundamental frequency (Wave A) with its third harmonic (Wave B).
+- **File:**  the-geometry-of-the-sine-wave-wave-interference-and-superposition.py
 
 ---
 
