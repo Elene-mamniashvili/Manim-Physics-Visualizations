@@ -72,8 +72,6 @@ Exploring how independent vibrations merge into complex harmonic systems.
   
 ### 07\. The Geometry of Decay: Damped Harmonic Motion
 
-## 
-
 Exploring how friction and resistance sculpt the sine wave over time by visualizing the transition from eternal oscillation to silence.
 
 -   **Concept:** $y = e^{-at} \\cdot \\sin(Bt + \\phi)$
@@ -81,6 +79,16 @@ Exploring how friction and resistance sculpt the sine wave over time by visualiz
 -   **Key Visual:** A sine wave trapped inside a shrinking "envelope" (exponential curves), showing the loss of energy over time.
     
 -   **File:** `the-geometry-of-decay-damped-harmonic-motion.py`
+
+  ### 08\. The Geometry of Information: Frequency Modulation (FM)
+
+Exploring how one wave can "carry" another by stretching and squeezing time, visualizing the geometry of variable frequency.
+
+-   **Concept:** $y = \\sin(B \\cdot t + M \\sin(C \\cdot t))$
+    
+-   **Key Visual:** The "Elastic Wave" or "Accordion Effect," where the wavelength varies dynamically across the x-axis, constrained by a modulator.
+    
+-   **File:** `the-geometry-of-information-frequency-modulation.py`
 ---
 
 ## 🛠️ How to Run
