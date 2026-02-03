@@ -89,6 +89,16 @@ Exploring how one wave can "carry" another by stretching and squeezing time, vis
 -   **Key Visual:** The "Elastic Wave" or "Accordion Effect," where the wavelength varies dynamically across the x-axis, constrained by a modulator.
     
 -   **File:** `the-geometry-of-information-frequency-modulation.py`
+
+### 09\. The Geometry of Resonance: Driven Harmonic Motion
+
+Visualizing the geometric "explosion" of amplitude when a system is pushed at its natural frequency.
+
+-   **Concept:** $y = (G \\cdot t) \\sin(Bt)$
+    
+-   **Key Visual:** An expanding "V-shaped" envelope where the sine wave grows larger with every cycle, demonstrating the additive power of synchronized energy.
+    
+-   **File:** `the-geometry-of-resonance-driven-harmonic-motion.py`
 ---
 
 ## 🛠️ How to Run
