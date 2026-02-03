@@ -68,6 +68,19 @@ Exploring how independent vibrations merge into complex harmonic systems.
 -   **Key Visual:** The "Composite Wave" formed by merging a fundamental frequency (Wave A) with its third harmonic (Wave B).
     
 -   **File:** `the-geometry-of-the-sine-wave-wave-interference-and-superposition.py`
+
+  
+### 07\. The Geometry of Decay: Damped Harmonic Motion
+
+## 
+
+Exploring how friction and resistance sculpt the sine wave over time by visualizing the transition from eternal oscillation to silence.
+
+-   **Concept:** $y = e^{-at} \\cdot \\sin(Bt + \\phi)$
+    
+-   **Key Visual:** A sine wave trapped inside a shrinking "envelope" (exponential curves), showing the loss of energy over time.
+    
+-   **File:** `the-geometry-of-decay-damped-harmonic-motion.py`
 ---
 
 ## 🛠️ How to Run
