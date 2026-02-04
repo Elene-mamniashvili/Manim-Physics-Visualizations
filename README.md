@@ -99,6 +99,16 @@ Visualizing the geometric "explosion" of amplitude when a system is pushed at it
 -   **Key Visual:** An expanding "V-shaped" envelope where the sine wave grows larger with every cycle, demonstrating the additive power of synchronized energy.
     
 -   **File:** `the-geometry-of-resonance-driven-harmonic-motion.py`
+
+### 10\. The Geometry of Complexity: Fourier Synthesis
+
+Visualizing how any complex shape in the universe is constructed by "stacking" simple, smooth sine waves.
+
+-   **Concept:** $y = \\sum\_{n=1,3,5}^{k} \\frac{1}{n} \\sin(n \\cdot t + \\frac{\\pi}{2})$
+    
+-   **Key Visual:** A "Harmonic Stack" where higher-frequency sine waves are layered onto a fundamental note, gradually transforming a smooth curve into a sharp, architectural square wave.
+    
+-   **File:** `the-geometry-of-complexity-fourier-series.py`
 ---
 
 ## 🛠️ How to Run
