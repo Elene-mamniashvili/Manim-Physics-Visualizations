@@ -110,6 +110,18 @@ Visualizing how any complex shape in the universe is constructed by "stacking" s
     
 -   **File:** `the-geometry-of-complexity-fourier-series.py`
 ---
+### 1\. The Birthday Paradox: Counterintuitive Probability
+
+Visualizing the surprising mathematical truth that in a group of just 23 people, there is a >50% chance that two share a birthday.
+
+-   **Concept:** $P(A) = 1 - \\frac{365!}{365^n(365-n)!}$
+    
+-   **Key Visual:** An exponential "S-Curve" that starts flat but climbs aggressively, crossing the 50% threshold much earlier than human intuition expects.
+    
+-   **File:** `the-birthday-paradox-why-your-intuition-is-wrong.py`
+
+
+
 
 ## 🛠️ How to Run
 To render these animations locally, ensure you have the [Manim Library](https://docs.manim.community/en/stable/installation.html) installed.
