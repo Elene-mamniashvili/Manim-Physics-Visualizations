@@ -1,60 +1,62 @@
 from manim import *
-import numpy as np
 
-class SimpsonsParadox(Scene):
+class SimpsonsParadoxWiki(Scene):
     def construct(self):
-        # 1. SCALE DOWN THE GRID 
-        # Making the units smaller ensures the full vector addition [12, 3] stays on screen.
+        # 1. THE GRID
         grid = NumberPlane(
             x_range=[0, 15, 1], 
-            y_range=[0, 10, 1],
+            y_range=[0, 12, 1],
             x_length=10, 
             y_length=6,
-            background_line_style={"stroke_opacity": 0.2}
-        ).shift(DOWN * 0.5 + RIGHT * 1.5) 
-        
+            background_line_style={"stroke_opacity": 0.1}
+        ).to_edge(DOWN)
         self.add(grid)
 
-        # 2. STATIONARY HUD (Fixed Absolute Coordinates)
-        HUD_X, HUD_Y = -6.0, 3.3
-        stats = {"group_a": "0/0", "group_b": "0/0", "total": "0/0"}
-
-        # Labels
-        a_label = Text("Group A:", font_size=20, font="Consolas").move_to([HUD_X, HUD_Y, 0], aligned_edge=LEFT)
-        b_label = Text("Group B:", font_size=20, font="Consolas").move_to([HUD_X, HUD_Y-0.4, 0], aligned_edge=LEFT)
-        t_label = Text("TOTAL  :", font_size=20, font="Consolas", color=YELLOW).move_to([HUD_X, HUD_Y-0.8, 0], aligned_edge=LEFT)
-        self.add(a_label, b_label, t_label)
-
-        # Value Redrawers (Fixed Parentheses)
-        a_val = always_redraw(lambda: Text(stats["group_a"], font_size=20, font="Consolas")
-            .move_to([HUD_X + 1.8, HUD_Y, 0], aligned_edge=LEFT))
-            
-        b_val = always_redraw(lambda: Text(stats["group_b"], font_size=20, font="Consolas")
-            .move_to([HUD_X + 1.8, HUD_Y-0.4, 0], aligned_edge=LEFT))
-            
-        t_val = always_redraw(lambda: Text(stats["total"], font_size=20, font="Consolas", color=YELLOW)
-            .move_to([HUD_X + 1.8, HUD_Y-0.8, 0], aligned_edge=LEFT))
+        # 2. REFINED HUD (Pulled back from Y-axis)
+        HUD_X, HUD_Y = -6.2, 3.4  # Moved further left
+        VAL_OFFSET = 2.8           # Reduced distance between label and value
         
-        self.add(a_val, b_val, t_val)
+        stats = {"a": "Upward", "b": "Upward", "t": "Downward"}
 
-        # 3. VECTORS
-        v1 = Line(grid.c2p(0,0), grid.c2p(2,2), color=BLUE, buff=0).add_tip(tip_length=0.2)
-        v2 = Line(grid.c2p(0,0), grid.c2p(10,1), color=RED, buff=0).add_tip(tip_length=0.2)
-        v_total = DashedLine(grid.c2p(0,0), grid.c2p(12,3), color=YELLOW, dash_length=0.1).add_tip()
+        # HUD Labels
+        a_txt = Text("Group A Trend:", font_size=19, font="Consolas").move_to([HUD_X, HUD_Y, 0], LEFT)
+        b_txt = Text("Group B Trend:", font_size=19, font="Consolas").move_to([HUD_X, HUD_Y-0.4, 0], LEFT)
+        t_txt = Text("GLOBAL TREND :", font_size=19, font="Consolas", color=WHITE).move_to([HUD_X, HUD_Y-0.8, 0], LEFT)
+        
+        # Values
+        val_a = Text(stats["a"], font_size=19, font="Consolas", color=BLUE).move_to([HUD_X + VAL_OFFSET, HUD_Y, 0], LEFT)
+        val_b = Text(stats["b"], font_size=19, font="Consolas", color=RED).move_to([HUD_X + VAL_OFFSET, HUD_Y-0.4, 0], LEFT)
+        val_t = Text("", font_size=19, font="Consolas", color=WHITE).move_to([HUD_X + VAL_OFFSET, HUD_Y-0.8, 0], LEFT)
+
+        self.add(a_txt, b_txt, t_txt, val_a, val_b)
+
+        # 3. THE DATA TRENDS (Wikipedia Style)
+        # Blue Group: Higher starting intercept
+        line_a = Line(grid.c2p(1, 6), grid.c2p(4, 9), color=BLUE, stroke_width=6).add_tip()
+        dots_a = VGroup(*[Dot(grid.c2p(x, x+5), color=BLUE, fill_opacity=0.6) for x in [1, 2, 3, 4]])
+
+        # Red Group: Lower starting intercept
+        line_b = Line(grid.c2p(8, 1), grid.c2p(11, 4), color=RED, stroke_width=6).add_tip()
+        dots_b = VGroup(*[Dot(grid.c2p(x, x-7), color=RED, fill_opacity=0.6) for x in [8, 9, 10, 11]])
+
+        # Global Paradox Line (Connecting centers)
+        v_tot = DashedLine(grid.c2p(2.5, 7.5), grid.c2p(9.5, 2.5), color=WHITE, stroke_width=4).add_tip()
 
         # 4. ANIMATION SEQUENCE
-        # Draw Group A
-        self.play(Create(v1), run_time=2)
-        stats["group_a"] = "2/2 (100%)"
-        self.wait(1)
+        self.play(FadeIn(dots_a), Create(line_a), run_time=1.5)
+        self.wait(0.5)
         
-        # Draw Group B
-        self.play(Create(v2), run_time=2)
-        stats["group_b"] = "1/10 (10%)"
+        self.play(FadeIn(dots_b), Create(line_b), run_time=1.5)
         self.wait(1)
 
-        # Draw Total (Update stats BEFORE animation so 0/0 updates instantly)
-        stats["total"] = "3/12 (25%)"
-        self.play(Create(v_total), run_time=2.5)
+        # The Reveal: Text and Line update together
+        self.play(
+            Create(v_tot),
+            val_t.animate.become(
+                Text("Downward", font_size=19, font="Consolas", color=WHITE).move_to([HUD_X + VAL_OFFSET, HUD_Y-0.8, 0], LEFT)
+            ),
+            run_time=2
+        )
+        self.play(Indicate(v_tot, color=WHITE, scale_factor=1.2))
         
         self.wait(3)
