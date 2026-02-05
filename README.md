@@ -120,7 +120,15 @@ Visualizing the surprising mathematical truth that in a group of just 23 people,
     
 -   **File:** `the-birthday-paradox-why-your-intuition-is-wrong.py`
 
+### 2\. The Monty Hall Problem: The Logic of Switching
 
+Visualizing why your initial 1/3 chance of winning a car jumps to 2/3 simply by choosing to switch doors after the host reveals a "goat."
+
+-   **Concept:** $P(\\text{Win by Switching}) = 1 - P(\\text{Initial Pick})$
+    
+-   **Key Visual:** A "Probability Shift" where the weight of a discarded door is transferred to the remaining unopened door, highlighted by a bold directional arrow.
+    
+-   **File:** `the-monty-hall-problem-why-switching-is-the-only-logical-choice.py`
 
 
 ## 🛠️ How to Run
