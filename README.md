@@ -171,6 +171,18 @@ A visual investigation into how aggregated data can reverse localized trends, il
 -   **The HUD:** A stationary scoreboard tracks the trends in real-time, highlighting the "Upward" local performance against the "Downward" global illusion to ensure the viewer catches the reversal.
     
 -   **File:** `simpsons-paradox-how-data-can-be-a-mathematical-illusion.py`
+-   
+### 7\. The Coupon Collector Problem: The Tax of the Final Item
+
+A simulation-driven exploration of diminishing returns and the mathematical "waiting time" required to complete a set of random variables.
+
+-   **Concept:** The Coupon Collector Problem describes the expected number of trials required to collect all unique types of an item. It reveals a non-linear difficulty curve: while the first few items are easy to find, the "last item" represents a statistical bottleneck where the probability of success plummets.
+    
+-   **Key Visual:** The experiment uses a **Collection Grid** alongside a real-time **Efficiency Tracker**. As the grid fills with blue (unique) items, the frequency of red (duplicate) flashes increases. The animation highlights the "Efficiency Collapse" phase, where the simulation time accelerates but progress in the grid slows to a crawl.
+    
+-   **The HUD:** A dynamic dashboard tracks **Total Trials**, **Collection Progress**, and **Simulation Time**. An integrated "Efficiency Status" monitor shifts from **HIGH (Green)** to **COLLAPSED (Red)** as the probability of finding a new item becomes mathematically unfavorable.
+    
+-   **File:** `the-coupon-collector-problem-the-tax-of-the-final-item.py`
 
 
 ## 🛠️ How to Run
