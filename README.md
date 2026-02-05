@@ -140,12 +140,6 @@ A geometric probability simulation that demonstrates how dropping needles onto a
     
 -   **File:** `buffons-needle-estimating-pi-through-randomness.py`
 
-### 
-
-Here is the README section for the **Law of Large Numbers** experiment, maintaining the same structure and tone as your previous entries.
-
-* * *
-
 ### 4\. The Law of Large Numbers: Chaos Finding its Balance
 
 Visualizing the mathematical bridge between short-term randomness and long-term certainty as the sample average converges to the expected value.
