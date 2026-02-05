@@ -150,6 +150,16 @@ Visualizing the mathematical bridge between short-term randomness and long-term 
     
 -   **File:** `the-law-of-large-numbers-chaos-finding-its-balance.py`
 
+### 5\. Random Walk (Drunkard’s Walk): Finding Order in Drunken Footsteps
+
+A simulation of a stochastic process where a path is determined by a series of random steps, illustrating how local chaos creates a global statistical structure.
+
+-   **Concept:** Each step is chosen randomly from four cardinal directions (Up, Down, Left, Right). While individual movements are unpredictable, the **Root Mean Square (RMS)** distance from the origin follows the law $D \\approx L \\cdot \\sqrt{n}$, where $n$ is the number of steps and $L$ is the step length.
+    
+-   **Key Visual:** A dynamic path trace on a coordinate grid where a yellow dot (the "wanderer") leaves a persistent trail. The simulation features a **Stationary HUD** in the top-left corner that anchors the "Steps" and "Distance" values in place, providing real-time displacement data without visual jitter.
+    
+-   **File:** `the-random-walk-finding-order-in-drunken-footsteps.py`
+
 
 ## 🛠️ How to Run
 To render these animations locally, ensure you have the [Manim Library](https://docs.manim.community/en/stable/installation.html) installed.
