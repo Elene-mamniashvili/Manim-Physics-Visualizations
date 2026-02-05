@@ -183,6 +183,18 @@ A simulation-driven exploration of diminishing returns and the mathematical "wai
 -   **The HUD:** A dynamic dashboard tracks **Total Trials**, **Collection Progress**, and **Simulation Time**. An integrated "Efficiency Status" monitor shifts from **HIGH (Green)** to **COLLAPSED (Red)** as the probability of finding a new item becomes mathematically unfavorable.
     
 -   **File:** `the-coupon-collector-problem-the-tax-of-the-final-item.py`
+  
+### 8\. Central Limit Theorem: Order Emerging from Chaos
+
+A visual proof of the most powerful theorem in statistics, showing how random sampling transforms messy data into a predictable Bell Curve.
+
+-   **Concept:** The Central Limit Theorem (CLT) establishes that when independent random variables are added, their properly normalized sum tends toward a normal distribution, even if the original variables themselves are not normally distributed.
+    
+-   **Key Visual:** The animation simulates hundreds of samples being drawn from a "Uniform" (flat) distribution. It tracks the mean of each sample and plots it on a second histogram, showing the step-by-step formation of a **Gaussian Bell Curve**.
+    
+-   **The HUD:** Real-time counters track the **Sample Size (n)** and the **Standard Error**, visually demonstrating how the curve narrows and sharpens as more data is processed.
+    
+-   **File:** `central-limit-theorem-order-emerging-from-chaos.py`
 
 
 ## 🛠️ How to Run
