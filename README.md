@@ -166,7 +166,7 @@ A visual investigation into how aggregated data can reverse localized trends, il
 
 -   **Concept:** Simpson’s Paradox occurs when a trend appearing in different groups of data disappears or reverses when those groups are combined. It highlights how "lurking variables"—specifically the size of the groups being compared—can distort the global average.
     
--   **Key Visual:** The paradox is mapped onto a coordinate grid using **Vector Slopes** to represent success rates. The animation showcases how two "steep" vectors (high local success) can result in a "shallow" aggregate vector (low global success). A **Frozen HUD** anchors the real-time ratios in the top-left corner to prevent visual jitter and provide a clear comparison between the subsets and the total.
+-   **Key Visual:** The paradox is mapped onto a four-quadrant coordinate grid. By using quadrants, the animation clearly separates "High Success/Low Volume" from "Low Success/High Volume." The Aggregate Vector (yellow dashed line) is shown "tilting" toward the quadrant with the higher volume, visually demonstrating the Weighting Bias.
     
 -   **File:** `simpsons-paradox-how-data-can-be-a-mathematical-illusion.py`
 
