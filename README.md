@@ -208,6 +208,18 @@ A visual exploration of phase transitions and network theory, showing the exact 
 
 **File:** `the-percolation-threshold-why-systems-suddenly-click.py`
 
+### 10\. Paradox of Choice: The Decision Paralysis Threshold
+
+A psychological and mathematical simulation of "Satisficing" vs. "Maximizing," illustrating how an abundance of options leads to a collapse in user satisfaction.
+
+**Concept:** The Paradox of Choice posits that while some choice is good, an excess of it leads to anxiety, higher opportunity costs, and eventually "Analysis Paralysis." In optimization terms, it shows a system where the cost of searching (cognitive load) eventually outpaces the marginal utility of finding a better option.
+
+**Key Visual:** The animation plots a **Utility Curve** that begins with a steep climb (representing the freedom of choice) but eventually peaks and enters a sharp decline. As the number of options increases, the "Search Cost" is visualized as a rising shadow that eats away at the total "Joy" area.
+
+**The HUD:** Real-time metrics track the **Option Count**, the **Opportunity Cost**, and the **Decision Time (Hick’s Law)**. When the "Optimal Choice" point is passed, the HUD triggers a "Warning: Paralysis Zone" alert, and the curve shifts from a vibrant Teal to a muted, flickering Red to represent stress.
+
+**File:** `the-paradox-of-choice-why-more-is-actually-less.py`
+
 
 ## 🛠️ How to Run
 To render these animations locally, ensure you have the [Manim Library](https://docs.manim.community/en/stable/installation.html) installed.
