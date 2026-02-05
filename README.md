@@ -140,6 +140,22 @@ A geometric probability simulation that demonstrates how dropping needles onto a
     
 -   **File:** `buffons-needle-estimating-pi-through-randomness.py`
 
+### 
+
+Here is the README section for the **Law of Large Numbers** experiment, maintaining the same structure and tone as your previous entries.
+
+* * *
+
+### 4\. The Law of Large Numbers: Chaos Finding its Balance
+
+Visualizing the mathematical bridge between short-term randomness and long-term certainty as the sample average converges to the expected value.
+
+-   **Concept:** As the number of trials $n$ increases, the sample mean $\\bar{X}\_n$ converges to the theoretical expected value $\\mu$. In this simulation of coin flips, the erratic initial fluctuations eventually smooth out into a stable line at $0.5$.
+    
+-   **Key Visual:** A dynamic line graph where the "vibration" of the line decreases over time, moving from high-variance chaos to a flat horizontal line, accompanied by a real-time "Trial vs. Average" HUD.
+    
+-   **File:** `the-law-of-large-numbers-chaos-finding-its-balance.py`
+
 
 ## 🛠️ How to Run
 To render these animations locally, ensure you have the [Manim Library](https://docs.manim.community/en/stable/installation.html) installed.
