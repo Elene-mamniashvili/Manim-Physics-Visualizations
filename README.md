@@ -160,6 +160,16 @@ A simulation of a stochastic process where a path is determined by a series of r
     
 -   **File:** `the-random-walk-finding-order-in-drunken-footsteps.py`
 
+### 6\. Simpson’s Paradox: How Data Can Be a Mathematical Illusion
+
+A visual investigation into how aggregated data can reverse localized trends, illustrating the importance of weighting and context in data science.
+
+-   **Concept:** Simpson’s Paradox occurs when a trend appearing in different groups of data disappears or reverses when those groups are combined. It highlights how "lurking variables"—specifically the size of the groups being compared—can distort the global average.
+    
+-   **Key Visual:** The paradox is mapped onto a coordinate grid using **Vector Slopes** to represent success rates. The animation showcases how two "steep" vectors (high local success) can result in a "shallow" aggregate vector (low global success). A **Frozen HUD** anchors the real-time ratios in the top-left corner to prevent visual jitter and provide a clear comparison between the subsets and the total.
+    
+-   **File:** `simpsons-paradox-how-data-can-be-a-mathematical-illusion.py`
+
 
 ## 🛠️ How to Run
 To render these animations locally, ensure you have the [Manim Library](https://docs.manim.community/en/stable/installation.html) installed.
