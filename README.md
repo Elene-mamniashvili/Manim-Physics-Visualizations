@@ -130,6 +130,16 @@ Visualizing why your initial 1/3 chance of winning a car jumps to 2/3 simply by 
     
 -   **File:** `the-monty-hall-problem-why-switching-is-the-only-logical-choice.py`
 
+### 3\. Buffon’s Needle: Estimating $\\pi$ Through Randomness
+
+A geometric probability simulation that demonstrates how dropping needles onto a lined surface can converge on the value of $\\pi$.
+
+-   **Concept:** The probability $P$ that a needle of length $l$ will cross a line among parallel lines spaced $d$ apart is $P = (2l) / (\\pi d)$. By rearranging, we estimate $\\pi \\approx (2l \\cdot n) / (d \\cdot h)$, where $n$ is the total drops and $h$ is the number of hits.
+    
+-   **Key Visual:** A "Hit vs. Miss" color-coding system where needles turn **Green** upon crossing a line and **Red** otherwise, paired with a real-time counter that recalculates the $\\pi$ approximation with every drop.
+    
+-   **File:** `buffons-needle-estimating-pi-through-randomness.py`
+
 
 ## 🛠️ How to Run
 To render these animations locally, ensure you have the [Manim Library](https://docs.manim.community/en/stable/installation.html) installed.
