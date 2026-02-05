@@ -164,9 +164,11 @@ A simulation of a stochastic process where a path is determined by a series of r
 
 A visual investigation into how aggregated data can reverse localized trends, illustrating the importance of weighting and context in data science.
 
--   **Concept:** Simpson’s Paradox occurs when a trend appearing in different groups of data disappears or reverses when those groups are combined. It highlights how "lurking variables"—specifically the size of the groups being compared—can distort the global average.
+-   **Concept:** Simpson’s Paradox occurs when a trend appearing in different groups of data disappears or reverses when those groups are combined. It highlights how "lurking variables"—specifically the distribution of data points—can create a misleading global average.
     
--   **Key Visual:** The paradox is mapped onto a four-quadrant coordinate grid. By using quadrants, the animation clearly separates "High Success/Low Volume" from "Low Success/High Volume." The Aggregate Vector (yellow dashed line) is shown "tilting" toward the quadrant with the higher volume, visually demonstrating the Weighting Bias.
+-   **Key Visual:** The paradox is visualized using two distinct data clusters. While the **Local Truths** (Blue and Red vectors) clearly show positive upward trends, the **Aggregate Trend** (White dashed line) connects the clusters in a way that tilts downward. This "Global Lie" visually demonstrates how the relative positioning of groups can flip the perceived narrative of the data.
+    
+-   **The HUD:** A stationary scoreboard tracks the trends in real-time, highlighting the "Upward" local performance against the "Downward" global illusion to ensure the viewer catches the reversal.
     
 -   **File:** `simpsons-paradox-how-data-can-be-a-mathematical-illusion.py`
 
