@@ -196,6 +196,18 @@ A visual proof of the most powerful theorem in statistics, showing how random sa
     
 -   **File:** `central-limit-theorem-order-emerging-from-chaos.py`
 
+### 9\. The Percolation Threshold: The Sudden Click of Connectivity 
+
+A visual exploration of phase transitions and network theory, showing the exact moment a system of "local" connections transforms into a "global" flow.
+
+**Concept:** Percolation theory models the behavior of connected clusters in a random graph. It reveals a "tipping point" (the critical threshold $p\_c \\approx 0.592$) where a system goes from being a collection of isolated islands to a fully connected network that allows for flow, communication, or travel.
+
+**Key Visual:** The animation fills a grid with "open" sites at a random, increasing density ($p$). As the occupancy probability approaches the critical threshold, the animation slows down to capture the "Critical Jump." Once $p\_c$ is reached, the software identifies and illuminates the first **Spanning Cluster**—a jagged, fractal path that bridges the entire grid from top to bottom.
+
+**The HUD:** A real-time tracker monitors the **Density ($p$)**, correlating the visual "clutter" of the grid with the mathematical probability of connectivity. When the path is completed, a localized **Circumscribe** effect highlights the specific geometry of the successful connection.
+
+**File:** `the-percolation-threshold-why-systems-suddenly-click.py`
+
 
 ## 🛠️ How to Run
 To render these animations locally, ensure you have the [Manim Library](https://docs.manim.community/en/stable/installation.html) installed.
