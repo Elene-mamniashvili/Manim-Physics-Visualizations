@@ -6,17 +6,17 @@ class NewtonsFirstLaw(Scene):
         status_label = Text("At Rest: Velocity (v) = 0", font_size=36).to_edge(UP, buff=0.8)
         
         square = Square(side_length=1.5, fill_opacity=1, color=RED)
-        ground = Line(LEFT * 4, RIGHT * 4, color=GRAY).next_to(square, DOWN, buff=0)
+        
+        # GROUND LOGIC: Start at square's left, length is shift (4) + width (1.5)
+        ground = Line(start=ORIGIN, end=RIGHT * 5.5, color=GRAY, stroke_width=4)
+        ground.next_to(square, DOWN, buff=0).align_to(square, LEFT)
         
         self.add(ground)
         self.play(DrawBorderThenFill(square), Write(status_label))
         self.wait(1)
         
         # --- 2. Applying an Unbalanced Force ---
-        # Tip ends at -1.1 to keep a slight gap from the square's edge (-0.75)
         force_arrow = Arrow(LEFT * 3.5, LEFT * 1.1, color=YELLOW, buff=0)
-        
-        # New "Goldilocks" distance: buff=0.9
         force_text = Text("Unbalanced Force", font_size=28, color=YELLOW).next_to(force_arrow, UP, buff=0.9)
         
         self.play(GrowArrow(force_arrow), FadeIn(force_text))
@@ -41,7 +41,6 @@ class NewtonsFirstLaw(Scene):
         puck = Circle(radius=0.5, fill_opacity=1, color=WHITE)
         
         velocity_vector = Arrow(ORIGIN, RIGHT * 1.5, color=GREEN, buff=0).next_to(puck, RIGHT, buff=0.2)
-        # Matching the cleaner spacing here as well
         v_text = Text("Constant Velocity", font_size=24, color=GREEN).next_to(velocity_vector, UP, buff=0.6)
         
         moving_obj = VGroup(puck, velocity_vector, v_text).move_to(LEFT * 5)
