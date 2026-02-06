@@ -230,6 +230,16 @@ A side-by-side comparison of friction-induced decay versus the infinite "status 
 -   **Key Visual:** A physical "Impulse" event followed by the separation of the object from the force that started its journey.
     
 -   **File:** `the-law-of-inertia-why-things-keep-moving.py`
+-   
+### 02\. Newton's Second Law: The Fundamental Trio
+
+A visual breakdown of the proportional relationship between mass, force, and the resulting acceleration.
+
+-   **Concept:** $F = m \\cdot a$ (Force equals Mass times Acceleration)
+    
+-   **Key Visual:** Two distinct masses (1kg vs 3kg) subjected to the exact same pulling force. The animation demonstrates how the lighter object achieves significantly higher velocity over the same duration, while the heavier object resists the change in motion.
+    
+-   **File:** `force-mass-and-acceleration-the-fundamental-trio.py`
 
 
 ## 🛠️ How to Run
