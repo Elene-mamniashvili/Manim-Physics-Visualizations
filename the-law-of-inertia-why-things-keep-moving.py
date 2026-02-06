@@ -7,9 +7,13 @@ class NewtonsFirstLaw(Scene):
         
         square = Square(side_length=1.5, fill_opacity=1, color=RED)
         
-        # GROUND LOGIC: Start at square's left, length is shift (4) + width (1.5)
-        ground = Line(start=ORIGIN, end=RIGHT * 5.5, color=GRAY, stroke_width=4)
-        ground.next_to(square, DOWN, buff=0).align_to(square, LEFT)
+        # GROUND LOGIC: 
+        # To start in the middle and end flush after a 4-unit shift:
+        # Left padding (4) + Square width (1.5) + Right padding (4) = 9.5 total length
+        ground = Line(start=ORIGIN, end=RIGHT * 9.5, color=GRAY, stroke_width=4)
+        
+        # Center the ground line relative to the square's center
+        ground.move_to(square.get_center() + DOWN * (square.side_length/2))
         
         self.add(ground)
         self.play(DrawBorderThenFill(square), Write(status_label))
