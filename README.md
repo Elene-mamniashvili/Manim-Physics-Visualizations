@@ -219,6 +219,17 @@ A psychological and mathematical simulation of "Satisficing" vs. "Maximizing," i
 **The HUD:** Real-time metrics track the **Option Count**, the **Opportunity Cost**, and the **Decision Time (Hick’s Law)**. When the "Optimal Choice" point is passed, the HUD triggers a "Warning: Paralysis Zone" alert, and the curve shifts from a vibrant Teal to a muted, flickering Red to represent stress.
 
 **File:** `the-paradox-of-choice-why-more-is-actually-less.py`
+---
+
+### 01\. The Law of Inertia: Why Things Keep Moving
+
+A side-by-side comparison of friction-induced decay versus the infinite "status quo" of deep space.
+
+-   **Concept:** Sum of Forces = 0 → Constant Velocity
+    
+-   **Key Visual:** A physical "Impulse" event followed by the separation of the object from the force that started its journey.
+    
+-   **File:** `the-law-of-inertia-why-things-keep-moving.py`
 
 
 ## 🛠️ How to Run
