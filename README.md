@@ -307,6 +307,20 @@ A synchronized physical simulation demonstrating the eternal exchange between gr
 -   **Technical Implementation:** The script utilizes `always_redraw` updaters to calculate instantaneous height ($h$) and velocity ($v$) from the pendulum's angular position, mapping these physical values to the height of the UI bar objects in real-time.
     
 -   **File:** `conservation-of-energy.py`
+
+### 08\. Gauss's Law for Magnetism: The No-Monopole Principle
+
+### 
+
+A geometric field visualization demonstrating that magnetic field lines are "eternal loopers," proving that the net magnetic flux through any closed surface is always zero.
+
+-   **Concept:** ∇ · B = 0 (The Divergence of the Magnetic Field is zero).
+    
+-   **Key Visual:** A moving "Gaussian Surface" (a transparent circle) glides through a scientifically accurate dipole magnetic field. A real-time "Net Flux" counter stays locked at **0.00**, regardless of the surface's proximity to the magnetic poles. This visualizes the fundamental truth that every field line entering the boundary must also leave it, confirming that "North-only" or "South-only" magnetic charges do not exist.
+    
+-   **Technical Implementation:** The script defines a custom vector field function using the **Dipole Formula**. To ensure cross-platform compatibility without LaTeX dependencies, it utilizes `always_redraw` to link standard `Text` objects to the position of the Gaussian surface, creating a "Heads-Up Display" (HUD) effect.
+    
+-   **File:** `maxwells-equations-electromagnetism.py`
   
 ## 🛠️ How to Run
 To render these animations locally, ensure you have the [Manim Library](https://docs.manim.community/en/stable/installation.html) installed.
