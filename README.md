@@ -331,6 +331,18 @@ A dynamic radial field simulation demonstrating that electric charges act as phy
 -   **Technical Implementation:** To simulate a "faucet" effect, the script utilizes `StreamLines` with a $1/r^2$ falloff function. It avoids LaTeX crashes by using a distance-based logic gate (`np.linalg.norm`) within an `always_redraw` function to update standard `Text` mobjects in real-time.
     
 -   **File:** `maxwells-gausss-electric-law.py`
+
+### 10\. Faraday's Law: The Induction Bridge
+
+A high-fidelity simulation of electromagnetic induction, visualizing the "birth" of an electric field from a fluctuating magnetic source and demonstrating the kinetic connection between the two forces.
+
+-   **Concept:** $\\nabla \\times E = -\\partial B / \\partial t$ (A time-varying magnetic field creates a curling electric field).
+    
+-   **Key Visual:** A bar magnet traverses through a stationary wire loop, acting as the catalyst for induction. As the magnet approaches, a "vortex" of yellow electric field arrows materializes and spins around the wire. The animation captures **Lenz's Law** in real-time: the direction of the induced field vortex flips as the magnet enters versus when it exits, visually proving nature's resistance to change in magnetic flux.
+    
+-   **Technical Implementation:** Uses a Gaussian-style bell curve function (`np.exp`) to calculate "Induction Strength" based on the magnet's relative X-coordinate. This value dynamically scales the magnitude and rotational direction of a `VectorField` via `always_redraw`. To ensure maximum compatibility and prevent environment-specific crashes, the script utilizes standard Unicode characters for mathematical symbols rather than external LaTeX compilers.
+    
+-   **File:** `maxwells-faradays-law.py`
   
 ## 🛠️ How to Run
 To render these animations locally, ensure you have the [Manim Library](https://docs.manim.community/en/stable/installation.html) installed.
