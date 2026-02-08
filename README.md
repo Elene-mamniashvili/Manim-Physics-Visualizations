@@ -240,7 +240,16 @@ A visual breakdown of the proportional relationship between mass, force, and the
     
 -   **File:** `force-mass-and-acceleration-the-fundamental-trio.py`
 
+### 03\. Newton's Third Law: Action and Reaction
 
+A visual proof that forces never exist in isolation but always as simultaneous, equal, and opposite pairs.
+
+-   **Concept:** $F\_{A \\to B} = -F\_{B \\to A}$ (Reciprocal Interaction)
+    
+-   **Key Visual:** Two objects interact (such as a collision or a person pushing off a wall), showing force vectors of identical magnitude appearing instantly in opposite directions. It highlights that "reaction" is not a delay, but a simultaneous partner to "action."
+    
+-   **File:** `newtons-third-law-action-reaction.py`
+  
 ## 🛠️ How to Run
 To render these animations locally, ensure you have the [Manim Library](https://docs.manim.community/en/stable/installation.html) installed.
 
