@@ -283,6 +283,18 @@ A multi-stage visualization that simplifies the complex laws of energy and disor
 -   **Technical Implementation:** Uses a custom `Polygon` liquid-logic system that scales and stretches in real-time, synced with directional vectors representing heat flow and work extraction.
     
 -   **File:** `thermodynamics-the-soda-glass.py`
+
+### 06\. Conservation of Momentum: The Law of Cosmic Balance
+
+A precise simulation of an elastic collision within an isolated system, demonstrating how momentum is traded between objects but never lost.
+
+-   **Concept:** p = m \* v (Momentum equals Mass times Velocity)
+    
+-   **Key Visual:** A collision between a large mass (2kg) and a smaller mass (1kg) inside a dashed "Isolated System" boundary. The animation uses dynamic velocity arrows that morph in real-time to show the transfer of momentum. As the large mass strikes the smaller one, the total system momentum—tracked by a live counter—remains perfectly constant, even as the individual balls change direction and speed.
+    
+-   **The Finale:** To emphasize the end of the interaction, the blue ball's velocity vector fades away upon reaching its final state, leaving the viewer to focus on the "Total Momentum" constant that ruled the entire event.
+    
+-   **File:** `conservation-of-momentum.py`
   
 ## 🛠️ How to Run
 To render these animations locally, ensure you have the [Manim Library](https://docs.manim.community/en/stable/installation.html) installed.
