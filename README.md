@@ -295,6 +295,18 @@ A precise simulation of an elastic collision within an isolated system, demonstr
 -   **The Finale:** To emphasize the end of the interaction, the blue ball's velocity vector fades away upon reaching its final state, leaving the viewer to focus on the "Total Momentum" constant that ruled the entire event.
     
 -   **File:** `conservation-of-momentum.py`
+
+### 07\. Conservation of Energy: The Pendulum Balance
+
+A synchronized physical simulation demonstrating the eternal exchange between gravitational potential and kinetic motion, proving that energy is never lost, only transformed.
+
+-   **Concept:** $E\_{total} = PE + KE$ (Total Energy equals Potential plus Kinetic)
+    
+-   **Key Visual:** A swinging pendulum linked to three dynamic bar charts (PE, KE, and Total). As the pendulum reaches its apex, the **Potential Energy** bar peaks; as it swings through the center at maximum speed, the energy "liquifies" into **Kinetic Energy**. The animation highlights the "checkbook of the universe"—while the individual components fluctuate, the **Total Energy** bar remains rock-solid and immobile.
+    
+-   **Technical Implementation:** The script utilizes `always_redraw` updaters to calculate instantaneous height ($h$) and velocity ($v$) from the pendulum's angular position, mapping these physical values to the height of the UI bar objects in real-time.
+    
+-   **File:** `conservation-of-energy.py`
   
 ## 🛠️ How to Run
 To render these animations locally, ensure you have the [Manim Library](https://docs.manim.community/en/stable/installation.html) installed.
