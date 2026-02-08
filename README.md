@@ -310,8 +310,6 @@ A synchronized physical simulation demonstrating the eternal exchange between gr
 
 ### 08\. Gauss's Law for Magnetism: The No-Monopole Principle
 
-### 
-
 A geometric field visualization demonstrating that magnetic field lines are "eternal loopers," proving that the net magnetic flux through any closed surface is always zero.
 
 -   **Concept:** ∇ · B = 0 (The Divergence of the Magnetic Field is zero).
@@ -321,6 +319,18 @@ A geometric field visualization demonstrating that magnetic field lines are "ete
 -   **Technical Implementation:** The script defines a custom vector field function using the **Dipole Formula**. To ensure cross-platform compatibility without LaTeX dependencies, it utilizes `always_redraw` to link standard `Text` objects to the position of the Gaussian surface, creating a "Heads-Up Display" (HUD) effect.
     
 -   **File:** `maxwells-equations-electromagnetism.py`
+
+### 09\. Gauss's Law for Electricity: The Source Principle
+
+A dynamic radial field simulation demonstrating that electric charges act as physical "faucets" or "sources" of flux, providing a sharp contrast to the "loop-only" nature of magnetism.
+
+-   **Concept:** ∇ · E = ρ / ε₀ (The Divergence of the Electric Field is proportional to the enclosed charge).
+    
+-   **Key Visual:** Replacing static arrows with high-velocity **StreamLines**, the field physically "flows" outward from a central positive charge. As the Gaussian Surface (circle) moves to capture the charge, the "Net Flux" HUD transitions from **0.00** to **1.00**. This demonstrates that while empty space has a balanced inflow/outflow, a physical charge creates a "net" emission of field lines that never return to their source.
+    
+-   **Technical Implementation:** To simulate a "faucet" effect, the script utilizes `StreamLines` with a $1/r^2$ falloff function. It avoids LaTeX crashes by using a distance-based logic gate (`np.linalg.norm`) within an `always_redraw` function to update standard `Text` mobjects in real-time.
+    
+-   **File:** `maxwells-gausss-electric-law.py`
   
 ## 🛠️ How to Run
 To render these animations locally, ensure you have the [Manim Library](https://docs.manim.community/en/stable/installation.html) installed.
