@@ -249,6 +249,16 @@ A visual proof that forces never exist in isolation but always as simultaneous, 
 -   **Key Visual:** Two objects interact (such as a collision or a person pushing off a wall), showing force vectors of identical magnitude appearing instantly in opposite directions. It highlights that "reaction" is not a delay, but a simultaneous partner to "action."
     
 -   **File:** `newtons-third-law-action-reaction.py`
+
+### 04\. Newton's Law of Universal Gravitation: The Invisible Thread
+
+A dynamic visualization of gravity as a field of influence that weakens with the square of the distance between two masses.
+
+-   **Concept:** $F = G \\frac{m\_1 m\_2}{r^2}$ (The Inverse Square Law)
+    
+-   **Key Visual:** A stationary central mass creates a "gravitational ripple" that intensity-scales in real-time as a smaller planet swoops through its field. Instead of simple static vectors, the animation uses a **dynamic tether** that thickens and glows based on proximity, visually proving how attraction intensifies exponentially as objects approach one another.
+    
+-   **File:** `gravity-the-invisible-thread.py`
   
 ## 🛠️ How to Run
 To render these animations locally, ensure you have the [Manim Library](https://docs.manim.community/en/stable/installation.html) installed.
