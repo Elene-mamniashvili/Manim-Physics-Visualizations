@@ -259,6 +259,30 @@ A dynamic visualization of gravity as a field of influence that weakens with the
 -   **Key Visual:** A stationary central mass creates a "gravitational ripple" that intensity-scales in real-time as a smaller planet swoops through its field. Instead of simple static vectors, the animation uses a **dynamic tether** that thickens and glows based on proximity, visually proving how attraction intensifies exponentially as objects approach one another.
     
 -   **File:** `gravity-the-invisible-thread.py`
+
+### 05\. Thermodynamics: The Soda Glass Analogy
+
+A multi-stage visualization that simplifies the complex laws of energy and disorder into a relatable metaphor: filling, spending, and the inevitable "fizz" of the universe.
+
+-   **Concept:** The four fundamental laws (0th through 3rd) governing energy transfer and entropy.
+    
+    -   **0th Law:** Thermal Equilibrium (Defining the Thermometer).
+        
+    -   **1st Law:** Energy Conservation ($dU = Q - W$).
+        
+    -   **2nd Law:** Entropy Increase ($dS > 0$).
+        
+    -   **3rd Law:** The Absolute Zero Limit ($T \\to 0$).
+        
+-   **Key Visual:** \* **The Bank Account:** A glass fills with liquid as **Heat (Q)** is poured in and drops as **Work (W)** is extracted, demonstrating that internal energy is a perfect balance of inputs and outputs.
+    
+    -   **The Inescapable Fizz:** Even when energy is stable, the 2nd Law is visualized through rising bubbles that represent **Entropy**. This proves that while energy is conserved, its "quality" is constantly being taxed by disorder.
+        
+    -   **The Frozen Limit:** The 3rd Law is depicted through a solidification effect and a "physical block" (Red Cross), visually communicating why absolute zero is an asymptotic limit that can never be reached.
+        
+-   **Technical Implementation:** Uses a custom `Polygon` liquid-logic system that scales and stretches in real-time, synced with directional vectors representing heat flow and work extraction.
+    
+-   **File:** `thermodynamics-the-soda-glass.py`
   
 ## 🛠️ How to Run
 To render these animations locally, ensure you have the [Manim Library](https://docs.manim.community/en/stable/installation.html) installed.
