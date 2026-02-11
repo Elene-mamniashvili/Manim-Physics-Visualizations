@@ -1,9 +1,11 @@
-# Digital Physics Lab: Manim Visualizations 🧪
+#Animations Created for AnimateMath.com
+
+# Digital Math & Physics Lab: Manim Visualizations 🧪
 
 A collection of mathematical experiments exploring the intersection of geometry and motion. 
 
 ## 🔬 Lab Experiments
-
+## Math Foundations
 ### 01\. The Pulse of a Circle
 
 An introductory look at the vertical displacement of a rotating vector.
@@ -110,6 +112,7 @@ Visualizing how any complex shape in the universe is constructed by "stacking" s
     
 -   **File:** `the-geometry-of-complexity-fourier-series.py`
 ---
+## Math Simulations
 ### 1\. The Birthday Paradox: Counterintuitive Probability
 
 Visualizing the surprising mathematical truth that in a group of just 23 people, there is a >50% chance that two share a birthday.
@@ -220,6 +223,7 @@ A psychological and mathematical simulation of "Satisficing" vs. "Maximizing," i
 -   **File:** `the-paradox-of-choice-why-more-is-actually-less.py`
 ---
 
+## Engineering Physics
 ### 01\. The Law of Inertia: Why Things Keep Moving
 
 A side-by-side comparison of friction-induced decay versus the infinite "status quo" of deep space.
