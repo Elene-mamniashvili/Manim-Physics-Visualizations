@@ -112,7 +112,7 @@ Visualizing how any complex shape in the universe is constructed by "stacking" s
     
 -   **File:** `the-geometry-of-complexity-fourier-series.py`
 ---
-### 10\. The Velocity of a Wave: Derivatives and Tangents
+### 11\. The Velocity of a Wave: Derivatives and Tangents
 
 ### 
 
