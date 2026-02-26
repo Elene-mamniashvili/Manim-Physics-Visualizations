@@ -112,6 +112,27 @@ Visualizing how any complex shape in the universe is constructed by "stacking" s
     
 -   **File:** `the-geometry-of-complexity-fourier-series.py`
 ---
+### 10\. The Velocity of a Wave: Derivatives and Tangents
+
+### 
+
+Bridging the gap between static geometry and the physics of motion by visualizing the _instantaneous_ speed of a traveling wave.
+
+-   **Concept:**  
+    f(x)\=sin⁡(x)f(x) = \\sin(x)f(x)\=sin(x)  
+    f′(x)\=cos⁡(x)f'(x) = \\cos(x)f′(x)\=cos(x)  
+    At any point xxx, the derivative represents the slope of the tangent line — the instantaneous rate of change.
+    
+-   **Key Visual:**  
+    A dynamic tangent line that “kisses” the sine curve and rotates in real time to match its steepness.  
+    A slope triangle that decomposes the tangent into its **Rise** and **Run** components.  
+    A live numerical readout displaying the derivative value — reaching **1.00** at the origin, **0.00** at the peaks, and **\-1.00** at the steepest descent.
+    
+-   **Mathematical Insight:**  
+    Demonstrates visually why the rate of change is greatest where the wave crosses the x-axis and zero where the wave reaches its maximum or minimum.
+    
+-   **File:** `the-velocity-of-a-wave-derivatives-and-tangents.py`
+  
 ## Math Simulations
 ### 1\. The Birthday Paradox: Counterintuitive Probability
 
