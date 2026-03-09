@@ -132,7 +132,44 @@ Bridging the gap between static geometry and the physics of motion by visualizin
     Demonstrates visually why the rate of change is greatest where the wave crosses the x-axis and zero where the wave reaches its maximum or minimum.
     
 -   **File:** `the-velocity-of-a-wave-derivatives-and-tangents.py`
-  
+
+### 
+
+To keep your GitHub repository and site documentation perfectly synchronized, here is the structured **README** section for your latest lab on **Integrals and Accumulation**.
+
+* * *
+
+### 12\. The Area of a Wave: Integrals and Accumulation
+
+### 
+
+**Calculating the total history of motion by transforming a velocity profile into accumulated physical area.**
+
+-   **Concept:**
+    
+    -   $f(x) = \\cos(x)$ (The Velocity)
+        
+    -   $\\int \\cos(x) dx = \\sin(x) + C$ (The Accumulated Displacement)
+        
+    -   The **Integral** represents the inverse of the derivative—summing infinite vertical slices (Riemann Sums) to find the total area under the curve.
+        
+-   **Key Visual:**
+    
+    -   **Riemann Slices:** The area is divided into a digital grid of vertical rectangles that vanish into a smooth fill as $dx \\to 0$.
+        
+    -   **Cyan Glow (Positive):** Visualizes "Positive Accumulation" from $0$ to $\\pi/2$, representing distance gained.
+        
+    -   **Red Glow (Negative):** Visualizes "The Sink" from $\\pi/2$ to $\\pi$, where the area is subtracted from the total, representing a return toward the origin.
+        
+    -   **Instant Swap:** A frame-perfect transition from discrete rectangles to a continuous definite integral.
+        
+-   **Mathematical Insight:**
+    
+    -   Demonstrates the **Fundamental Theorem of Calculus**: the shape of a wave and the area it creates are fundamentally linked.
+        
+    -   Proves why the Sine wave reaches its peak exactly when the Cosine wave (velocity) hits zero.
+        
+-   **File:** `the-area-of-a-wave-integrals-and-accumulation.py`
 ## Math Simulations
 ### 1\. The Birthday Paradox: Counterintuitive Probability
 
